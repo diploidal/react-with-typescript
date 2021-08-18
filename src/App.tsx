@@ -12,7 +12,9 @@ function App() {
       <Button onClick={(e) => {
         e.preventDefault();
         console.log(e);
-      }}/>
+      }}>
+        Hello World
+      </Button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
