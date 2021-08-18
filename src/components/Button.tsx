@@ -1,12 +1,11 @@
 import React from "react";
 
 type Props = {
-  // onClick(): string            | method returns string
-  // onClick(text: string): void  | method with params, returns nothing
-  // onClick: (text: string) => void  | function with params, returns nothing
-  onClick: (text: string) => void  // | function with params
+  // onClick: (e: React.MouseEvent) => void  // Basic MouseEvent
+  // onChange?: (e: React.FormEvent<HTMLInputElement>) => void
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void  // Basic MouseEvent
 }
 
 export const Button = ({onClick}: Props) => {
-  return <button onClick={() => onClick('hi')}>Click me</button>
+  return <button onClick={onClick}>Click me</button>
 };

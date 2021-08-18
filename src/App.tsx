@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <Head title={'Hi from props'} isActive={false}/>
-      <Button onClick={() => console.log('Hello')}/>
+      <Button onClick={(e) => {
+        e.preventDefault();
+        console.log(e);
+      }}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
