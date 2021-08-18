@@ -1,11 +1,11 @@
 import React from 'react';
 
 type HeadPropTypes = {
-  title: string,
-  isActive: boolean
+  title: string, // Required type
+  isActive?: boolean // Optional type
 }
 
-export const Head = ({ title, isActive }: HeadPropTypes) => {
+export const Head = ({ title, isActive = true }: HeadPropTypes) => {
   return (
     <div>
       <h1>{title}</h1>

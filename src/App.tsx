@@ -7,7 +7,7 @@ import { Head } from './components/Head'
 function App() {
   return (
     <div className="App">
-      <Head title={'Hello from props'} isActive={true}/>
+      <Head title={'Hi from props'} isActive={false}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
